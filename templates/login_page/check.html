@@ -1,0 +1,30 @@
+{% extends 'login_page/layout.html' %}
+{% block content %}
+
+<table class="table">
+  <thead>
+    <tr>
+      
+      <th scope="col">Email</th>
+      <th scope="col">EMS</th>
+      <th scope="col">Send</th>
+
+    </tr>
+  </thead>
+  <tbody>
+  {% for data in parcles %}
+    <tr>
+    
+      
+      <td>{{data.email}}</td>
+      <td>{{data.ems}}</td>
+      <td>{{data.isSend}}</td>
+      
+    </tr>
+    {% endfor %}
+   
+  </tbody>
+</table>
+ {% endblock  %}
+
+

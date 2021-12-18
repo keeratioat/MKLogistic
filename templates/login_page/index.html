@@ -1,0 +1,32 @@
+{% extends 'login_page/layout.html' %}
+
+{% block content %}
+        <h1 style="margin-top: 20px; margin-bottom: 20px;">Welcome to Mongkol Logistic</h1>
+        {% if user.is_authenticated %}
+        <h2 style="margin-top: 20px;">Hello {{ user.username }}</h2>
+        {% endif %}
+
+<div class="container-fluid ">
+
+        <div class="row ">
+            <div class="col-sm-4 " style="background-color:lavender; ">
+                <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/CECA/production/_107883925_mediaitem107883921.jpg"
+                    alt=" " width="400 " height="400 " style="padding-left: 20px; padding-top: 10px; ">
+                <p style="font-size: 18px; margin-top: 10px; text-align: center;">Drug </p>
+            </div>
+            <div class="col-sm-4 " style="background-color:pink; ">
+                <img src="https://anatomylearning.com/wp-content/uploads/2021/08/Portada-2000-x1200-2.jpg"
+                    alt=" " width="400 " height="400 " style="padding-left: 20px; padding-top: 10px; ">
+                <p style="font-size: 18px;margin-top: 10px; text-align: center;">Human body </p>
+            </div>
+            <div class="col-sm-4 " style="background-color:lavender; ">
+                <img src="https://images.vice.com/vice/images/articles/meta/2014/10/08/how-and-why-people-join-copenhagen-gangs-1413235621403.jpeg?crop=0.66625xw:1xh;center,center"
+                    alt=" " width="400 " height="400 " style="padding-left: 20px; padding-top: 10px; ">
+                <p style="font-size: 18px; margin-top: 10px;text-align: center;">Weapon</p>
+            </div>
+
+
+        </div>
+    </div>
+
+ {% endblock  %}
